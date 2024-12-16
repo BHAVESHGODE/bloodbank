@@ -8,7 +8,7 @@ const Hospitals = () => {
   //find donar records
   const getDonars = async () => {
     try {
-      const { data } = await API.get("http://localhost:8000/api/v1/inventory/get-hospitals");
+      const { data } = await API.get("https://bloodbank-lorm.onrender.com/api/v1/inventory/get-hospitals");
       //   console.log(data);
       if (data?.success) {
         setData(data?.hospitals);
